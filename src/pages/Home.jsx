@@ -7,21 +7,7 @@ function Home() {
     <div className="min-h-screen bg-gray-100">
 
       {/* Header */}
-      <div className="bg-white shadow-md p-4">
-        <div className="max-w-6xl mx-auto flex flex-col items-center">
-
-          <img 
-            src={logo}
-            alt="Sanskrithi Logo"
-            className="h-20 object-contain mb-2"
-          />
-
-          <h1 className="text-3xl font-bold text-gray-800">
-            Sanskrithi Youth Fest 2K26
-          </h1>
-
-        </div>
-      </div>
+      
 
       {/* Section Cards */}
       <div className="max-w-5xl mx-auto mt-16 grid md:grid-cols-3 gap-8 px-6">

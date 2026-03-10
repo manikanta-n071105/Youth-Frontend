@@ -3,9 +3,27 @@ import Home from "./pages/Home";
 import Sports from "./pages/Sports";
 import Food from "./pages/Food";
 import Culturals from "./pages/Culturals";
+import logo from "../src/assets/logo.png";
+
 
 function App() {
   return (
+<>
+    <div className="bg-white shadow-md p-4">
+        <div className="max-w-6xl mx-auto flex flex-col items-center">
+
+          <img 
+            src={logo}
+            alt="Sanskrithi Logo"
+            className="h-20 object-contain mb-2"
+          />
+
+          <h1 className="text-3xl font-bold text-gray-800">
+            Sanskrithi Youth Fest 2K26
+          </h1>
+
+        </div>
+      </div>
     <BrowserRouter>
 
       <Routes>
@@ -18,6 +36,7 @@ function App() {
       </Routes>
 
     </BrowserRouter>
+    </>
   );
 }
 
