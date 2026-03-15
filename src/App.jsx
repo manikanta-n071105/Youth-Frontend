@@ -3,16 +3,17 @@ import Home from "./pages/Home";
 import Sports from "./pages/Sports";
 import Food from "./pages/Food";
 import Culturals from "./pages/Culturals";
-import logo from "../src/assets/logo.png";
+import Fixtures from "./pages/Fixtures";
 
+import logo from "../src/assets/logo.png";
 
 function App() {
   return (
-<>
-    <div className="bg-white shadow-md p-4">
+    <>
+      <div className="bg-white shadow-md p-4">
         <div className="max-w-6xl mx-auto flex flex-col items-center">
 
-          <img 
+          <img
             src={logo}
             alt="Sanskrithi Logo"
             className="h-20 object-contain mb-2"
@@ -24,18 +25,24 @@ function App() {
 
         </div>
       </div>
-    <BrowserRouter>
 
-      <Routes>
+      <BrowserRouter>
 
-        <Route path="/" element={<Home />} />
-        <Route path="/sports" element={<Sports />} />
-        <Route path="/food" element={<Food />} />
-        <Route path="/culturals" element={<Culturals />} />
+        <Routes>
 
-      </Routes>
+          <Route path="/" element={<Home />} />
 
-    </BrowserRouter>
+          <Route path="/sports" element={<Sports />} />
+
+          <Route path="/sports/:game" element={<Fixtures />} />
+
+          <Route path="/food" element={<Food />} />
+
+          <Route path="/culturals" element={<Culturals />} />
+
+        </Routes>
+
+      </BrowserRouter>
     </>
   );
 }
